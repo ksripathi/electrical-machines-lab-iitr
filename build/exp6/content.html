@@ -1,0 +1,297 @@
+<!-- This file needs to be edited by the lab developer to suit
+the requirements of their lab in particular.-->
+
+<!-- Add class="default" to include any element as it is
+specified in default.html. 
+Do not include class="default" to the elements that you want to
+edit -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+</head>
+<body>
+
+<div id="experiment"> 
+
+  <header id="experiment-header" class="default">
+  
+    <div id="experiment-header-logo" class="logo">
+     
+      <img src="../images/logo.jpg" />
+    </div>
+
+    <div id="experiment-header-heading" class="heading">
+     
+      <a href="../index.php">Electrical Machines Lab</a>	
+    </div>
+
+    
+
+  </header>
+
+
+ 
+  <article id="experiment-article">
+  
+    
+     <div id="experiment-article-breadcrumb" class="breadcrumb">
+     </div>
+    
+      <header id="experiment-article-heading" class="heading">
+       
+    Speed control of slipring Induction Motor</header>
+
+    
+      <nav id="experiment-article-navigation" class="default">
+        <ul id="experiment-article-navigation-menu">
+        
+        </ul>
+      </nav>
+
+      <!-- All the sections of your lab or experiment can be 
+      enclosed together with a div element as shown below-->
+      <div id="experiment-article-sections">
+
+        <!-- First section of the article-->
+        <section id="experiment-article-section-1">
+          
+          <div id="experiment-article-section-1-icon" 
+          class="icon">
+	    <!-- Enclose the icon image of your lab -->
+	    <img src="../images/theory.jpg" />
+	  </div>	
+          
+          <!-- The heading for the section can be enclosed in a 
+          div tag. -->
+          <div id="experiment-article-section-1-heading" 
+          class="heading">
+            Theory 
+          </div>
+
+          <!-- Write the section content inside a paragraph 
+          element, You can also include images with <img> tag -->
+          <div id="experiment-article-section-1-content" 
+          class="content">	
+            
+
+	<h2>Introduction	  </h2>
+	<p>A wound rotor induction motor or slip ring induction motor has a stator like the squirrel cage induction motor, but a rotor with insulated windings brought out via slip rings and brushes. However, no power is applied to the slip rings. Their sole purpose is to allow resistance to be placed in series with the rotor windings while starting.</p>
+	<h2><img src="images/Image_002.jpg" style="width:426px;height:305px" alt=""/></h2>
+	<h2><br>
+	  Slip Ring Motor Characteristics:</h2>
+	<p><br>
+	  A slip ring motor or a phase wound motor is an induction motor which can be started with full line voltage, applied across its stator terminals. 
+	  The rotor winding terminals of a wound rotor motor are connected to three slip-rings mounted on but insulated from the shaft. The leads, from the three brushes pressing on these slip-rings are taken to external resistances. At the time of start, the value of starting current is adjusted by adding up external resistance to its rotor circuit. As the rotor speeds up, the external resistance is decreased in steps so that motor torque tends to remain maximum during the accelerating period. Finally, under normal operation, the external resistance is fully cut off and the slip-rings are short-circuited so that motor now develop full load torque at low value of slip-rings.<br>
+	  The point to be noted is the “slip necessary to generate maximum torque is directly proportional to the rotor resistance.” So it is evident that the slip increases with increase in external resistance. With the above statements, let us discuss the different methods of speed control of slip ring induction motors: <br>
+	  1. Rotor Rheostat Control <br>
+	  2. Cascade Control<br>
+	  </p>
+	<h2>Speed Control by Rotor Rheostat Control</h2>
+	<p><img src="images/Image_003.jpg" style="width:447px;height:367px" alt=""/></p>
+	<p>The external rheostat which is used for the starting purpose of these slip ring motors can be used for its speed control too. But the point to look into is the starting rheostat must be rated for “continuous” operation. With the same rheostat added to the rotor circuit, it is possible to regulate the speed of slip ring motors. The resistance is engaged maximum during starting and slowly cut-off to increase the speed of the motor. When running at full speed, if the need arises to reduce the speed, the resistance is slowly added up and thus speed reduces. To understand the speed control, let us look into the torque-slip relation given below. Torque T = S/R. Where S – is the slip of the motor, And R – is the Rotor resistance<br>
+	  It is evident from the above relation that as the rotor resistance increases, the torque decreases. But for a given load demand, the motor and thus the rotor has to supply the same torque without any decrease. So in order to maintain the torque constant, as the rotor resistance increases the slip also increases. This increase in slip is nothing but decrease in motor speed. </p>
+	<p><img src="images/Image_004.jpg" style="width:387px;height:318px" alt=""/></p>
+	<h2>Rotor resistance controls speed of wound rotor induction motor</h2>
+	<p><img src="images/Image_005.jpg" style="width:648px;height:404px" alt=""/></p>
+	<p>&nbsp;</p>
+	<p>Disadvantages: But there are some disadvantages in this method of speed control. As the rotor resistance is increased, the “I^2 * R” losses also increases which in turn decreases the operating efficiency of the motor. It can be interpreted as the loss is directly proportional to reduction in speed. Since the losses are more, this method of speed reduction is used only for short period only.<br>
+	  </p>
+	<h2>Speed Control by Cascade Control</h2>
+	<p><img src="images/Image_007.jpg" style="width:376px;height:347px" alt=""/><br clear="all">
+	  This method has two motors mounted on same shaft called in tandem or cascade operation.<br>
+	  The motor “A” which is connected to the mains is called as the main or the master motor. This motor has slip rings<br>
+	  mounted on its rotor shaft from which the motor “B” gets its supply from is called as auxiliary or the slave motor. It is to be noted that both the motors are mounted on same shaft. Thus it is evident that either the motors must run at same speed or it may have some gear arrangements.<br>
+	  The main motor is necessarily a slip ring induction motor but the auxiliary motor can be slip ring or squirrel cage induction motor.<br>
+	  For satisfactory operation, motor “A” must be phase wound/ slip ring type with the stator to rotor winding ratio of 1:1, so that in addition to cascade operation, they can also run from supply mains separately.<br>
+	  Since the supply for the slave motor is from the slip rings of the master motor, and it is forming a chain of sequential operation, the system is called as “Tandem or Cascade or Concatenation” operation.<br>
+	  Three or four different combinations are possible for attaining different speeds.<br>
+	  &gt; Main motor may be alone on the mains, where Na = 120f/Pa, where Pa is the number of poles in motor “A.”<br>
+	  &gt;Auxiliary or the slave motor running alone on the mains,<br>
+	  where Nb = 120f/Pb and<br>
+	  Pb is the number of poles in motor “B.”<br>
+	  &gt;The combination may be in cascade operation. In this operation, the important point is that the phase rotation of the stator fields of the motors “A” and “B” must be in same direction. Thus the synchronous speed of this cascaded motor set is given by Nc = 120f/ (Pa + Pb).<br>
+	</p>
+          </div>
+
+
+      </section>
+
+      <!-- Second section of the article-->
+      <section id="experiment-article-section-2">
+        
+        <div id="experiment-article-section-2-icon" 
+        class="icon">
+	  <!-- Enclose the icon image of your lab. -->
+	  <img src="../images/objective.jpg" />
+	</div>
+				
+        <!-- The heading for the section can be enclosed in a 
+        div tag. -->
+        <div id="experiment-article-section-2-heading" 
+        class="heading">
+          Objective</div>
+       <div id="experiment-article-section-2-content" 
+        class="content">
+
+         <ol>
+           <li>To assess your  knowledge about the experiment by answering a questionnaire at the end of the  experiment</li></ol></div>
+      </section>
+
+
+      <section id="experiment-article-section-3">
+        
+        <div id="experiment-article-section-3-icon" 
+        class="icon">
+	  <!-- Enclose the icon image of your lab. -->
+	  <img src="../images/Equipment Used.jpg" />
+	</div>
+     
+        <div id="experiment-article-section-3-heading" 
+        class="heading">
+          Equipment Used</div>
+
+        <div id="experiment-article-section-3-content" 
+        class="content">
+
+	<p>
+        1. Three phase Slip ring induction Motor<br>
+	  2. NI USB 6212 Data Acquisition card.
+	  <br>
+	  3. Voltage Transducer<br>
+	  4. RPM indicator	<br>
+	  5. Solid State Relay
+	</p>
+        </div>
+
+      </section>
+
+
+      <section id="experiment-article-section-4">
+
+        <div id="experiment-article-section-4-icon" 
+        class="icon">
+	  <!-- Enclose the icon image of your lab.-->
+	  <img src="../images/simulation.jpg" />
+	</div>
+
+        <div id="experiment-article-section-4-heading" 
+        class="heading">
+          Experiment
+        </div>
+
+        <div id="experiment-article-section-4-content" 
+        class="content">
+ <p>
+      <a onclick="window.open('http://103.37.201.114/view.php?expid=exp1308265593&cnid=3', null,'scrollbars=yes, width=' + (screen.availWidth) +',height=' + (screen.availHeight)); return false;" class="qtlink" href="http://103.37.201.114/view.php?expid=exp1308265593&cnid=3">
+
+	Go to lab on Speed control of slipring Induction Motor(Click here)
+	</a>
+         </p>
+
+        </div>
+
+      </section>
+      <section id="experiment-article-section-6">
+      
+        <div id="experiment-article-section-6-icon" 
+          class="icon">
+	    <!-- Enclose the icon image of your lab.-->
+	    <img src="../images/quizzes.jpg" />
+	  </div>
+
+          <div id="experiment-article-section-6-heading" 
+          class="heading">
+            Quizzes
+          </div>
+
+          <div id="experiment-article-section-6-content" 
+          class="content">
+            
+            <p>The quiz is included in the standalone application.
+            </div>
+
+        </section>
+
+        <section id="experiment-article-section-7">
+	  
+          <div id="experiment-article-section-7-icon" 
+          class="icon">
+	    <!-- Enclose the icon image of your lab. -->
+	    <img src="../images/procedure.jpg" />
+	  </div>
+	
+          <div id="experiment-article-section-7-heading" 
+          class="heading">
+	    Procedure
+	  </div>
+	
+          <div id="experiment-article-section-7-content" 
+          class="content">
+            <p>Procedure for the experiment is shown in the following video. </p>
+		<p>
+		  <iframe width="840" height="450" src="https://www.youtube.com/embed/TY9bCf7QHaE" frameborder="0" allowfullscreen></iframe>
+          </div>
+	
+        </section>
+			
+		
+        <section id="experiment-article-section-8">
+   
+          <div id="experiment-article-section-8-icon" 
+          class="icon">
+	    <!-- Enclose the icon image of your lab.-->
+	    <img src="../images/readings.jpg" />
+	  </div>
+
+          <div id="experiment-article-section-8-heading" 
+          class="heading">
+            Further Readings
+          </div>
+
+          <div id="experiment-article-section-8-content" 
+          class="content">
+  <ol>
+    <li><a href="http://www.nptel.ac.in/courses/.../pdf/L-39(TB)(ET) ((EE)NPTEL).pdf">www.nptel.ac.in/courses/.../pdf/L-39(TB)(ET)%20((EE)NPTEL).pdf</a>  </li>
+    <li><a href="http://www.ripublication.com/aeee/10_pp%2077-80.pdf">www.ripublication.com/aeee/10_pp%2077-80.pdf</a></li>
+    <li><a href="http://www.electrical4u.com/speed-control-of-dc-motor">www.electrical4u.com/speed-control-of-dc-motor</a><strong></strong></li>
+    <li><a href="http://www.carotron.com/articles/armature-field-control/">www.carotron.com/articles/armature-field-control/</a></li>
+  </ol>
+  <p><br>
+  
+          </div>
+
+        </section>
+
+      </div>
+
+
+    <!-- An article can have a sidebar that contain related 
+    links and additional material (however it is kept optional 
+    at this moment) -->
+    <aside id="lab-article-sidebar" class="default">
+      <!-- put the content that you want to appear in the 
+      sidebar -->	
+    </aside>
+
+
+    <!-- Article footer can display related content and 
+    additional links -->						
+    <footer id="lab-article-footer" class="default">
+      <!-- Put the content that you want to appear here -->
+    </footer>
+
+  </article>
+
+
+  <!-- Links to other labs, about us page can be kept the lab 
+  footer-->
+  <footer id="lab-footer" class="default">
+    <!-- Put the content here-->
+  </footer>
+
+</div>		
+
+</body>
+</html>
